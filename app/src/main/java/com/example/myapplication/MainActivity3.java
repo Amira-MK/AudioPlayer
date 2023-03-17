@@ -107,4 +107,10 @@ public class MainActivity3 extends AppCompatActivity {
         }
         super.onDestroy();
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        textToSpeech.stop();
+    }
 }
